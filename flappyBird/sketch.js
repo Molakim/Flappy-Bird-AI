@@ -36,14 +36,10 @@ var genPlayerTemp; //player
 var showNothing = false;
 
 var randomPipeHeights = [];
-var isChristmas = true;
+var isChristmas = false;
 
 function preload() {
-  if (isChristmas) {
-    birdSprite = loadImage("images/christmasBerd.png");
-  } else {
-    birdSprite = loadImage("images/fatBird.png");
-  }
+  birdSprite = loadImage("images/fatBird.png");
   topPipeSprite = loadImage("images/full pipe top.png");
   bottomPipeSprite = loadImage("images/full pipe bottom.png");
   backgroundSprite = loadImage("images/background.png");
